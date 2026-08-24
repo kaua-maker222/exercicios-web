@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Bases</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="voltar" href="../index.html">← Voltar</a>
+
+  <main class="calculadora">
+    <h1>Conversor de Bases</h1>
+    <p>Digite um valor em qualquer campo</p>
+
+    <div class="campos">
+      <label for="binario">Binário</label>
+      <input id="binario" data-base="2" type="text" inputmode="numeric" placeholder="Ex.: 1010">
+
+      <label for="decimal">Decimal</label>
+      <input id="decimal" data-base="10" type="text" inputmode="numeric" placeholder="Ex.: 10">
+
+      <label for="octal">Octal</label>
+      <input id="octal" data-base="8" type="text" inputmode="numeric" placeholder="Ex.: 12">
+
+      <label for="hexadecimal">Hexadecimal</label>
+      <input id="hexadecimal" data-base="16" type="text" placeholder="Ex.: A">
+    </div>
+
+    <button id="limpar">Limpar</button>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

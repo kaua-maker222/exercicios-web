@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="voltar" href="../index.html">← Voltar</a>
+
+  <main>
+    <header>
+      <div>
+        <h1>Minhas tarefas</h1>
+        <p>Organize o que precisa ser feito.</p>
+      </div>
+      <button id="mostrar-formulario">+ Nova tarefa</button>
+    </header>
+
+    <form id="formulario">
+      <input id="nova-tarefa" type="text" placeholder="Digite o título da tarefa" maxlength="80" required>
+      <button type="submit">Adicionar</button>
+      <button type="button" id="cancelar">Cancelar</button>
+    </form>
+
+    <p id="lista-vazia">A lista está vazia. Crie sua primeira tarefa 😁</p>
+    <ul id="lista"></ul>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

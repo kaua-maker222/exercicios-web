@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+  color: #222222;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 90%;
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 25px;
+  background-color: white;
+  border: 1px solid #bbbbbb;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 2px solid #2864a8;
+  padding-bottom: 15px;
+}
+
+h1 {
+  margin: 0 0 5px;
+  color: #2864a8;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+}
+
+button {
+  padding: 9px 12px;
+  border: 0;
+  background-color: #2864a8;
+  color: white;
+  cursor: pointer;
+}
+
+#formulario {
+  display: none;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+#nova-tarefa {
+  min-width: 0;
+  padding: 9px;
+  border: 1px solid #999999;
+  font-size: 15px;
+}
+
+#cancelar {
+  background-color: #777777;
+}
+
+#lista-vazia {
+  margin-top: 25px;
+  padding: 35px 10px;
+  border: 1px dashed #999999;
+  text-align: center;
+  color: #666666;
+}
+
+#lista {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.tarefa {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+  align-items: center;
+  padding: 14px 5px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.tarefa h2 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+
+.tarefa small {
+  color: #666666;
+}
+
+.tarefa.concluida h2 {
+  color: #777777;
+  text-decoration: line-through;
+}
+
+.acoes {
+  display: flex;
+  gap: 6px;
+}
+
+.excluir {
+  background-color: #b33131;
+}
+
+.voltar {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  color: #2864a8;
+}
+
+@media (max-width: 600px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  #formulario {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #nova-tarefa {
+    grid-column: 1 / -1;
+  }
+
+  .tarefa {
+    grid-template-columns: 1fr;
+  }
+}
